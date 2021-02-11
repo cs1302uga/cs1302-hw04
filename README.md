@@ -1,6 +1,6 @@
-# cs1302-ce09 More Shapes
+# cs1302-hw04 More Shapes!
 
-![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
+![Approved for: Spring 2021](https://img.shields.io/badge/Approved%20for-Spring%202021-success)
 
 > 十人十色 (Ten People, Ten Colors)
 > **--Japanese Idiom**
@@ -35,17 +35,17 @@ command depends on your present working directory), then please note that contex
 
 ### Checkpoint 1 Steps - Getting Started
 
-1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-ce09`:
+1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-hw04`:
 
    ```
-   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce09.git
+   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw04.git
    ```
 
 1. **[ALL GROUP MEMBERS]**
    If you did not setup your Git username and email on Odin when working on `cs1302-ce07`,
    then please revist that exercise and follow the instructions presented there.
 
-1. Change into the `cs1302-ce09` directory that was just created and look around. There should be
+1. Change into the `cs1302-hw04` directory that was just created and look around. There should be
    multiple Java files contained within the directory structure. To see a listing of all of the 
    files under the `src` subdirectory, use the `find` command as follows:
    
@@ -136,7 +136,7 @@ command depends on your present working directory), then please note that contex
 
 1. Generate the API documentation website for all of the code in the `cs1302` package
    into the `doc` directory. You may need to create the `doc` directory if it does not already exist.
-   Host the documentation on Odin using `cs1302-ce09-doc` as the name for your symbolic link. Write
+   Host the documentation on Odin using `cs1302-hw04-doc` as the name for your symbolic link. Write
    the full URL for the `Rectangle` class in your notes.
 
 <hr/>
@@ -177,7 +177,7 @@ command depends on your present working directory), then please note that contex
 
 1. Generate the API documentation website for all of the code in the `cs1302` package
    into the `doc` directory. You may need to create the `doc` directory if it does not already exist.
-   Host the documentation on Odin using `cs1302-ce09-doc` as the name for your symbolic link. Write
+   Host the documentation on Odin using `cs1302-hw04-doc` as the name for your symbolic link. Write
    the full URL for the `Square` class in your notes.
 
 <hr/>
@@ -228,29 +228,27 @@ command depends on your present working directory), then please note that contex
 
 **Each student needs to individually submit their own work.**
 
-1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce09`
-   directory with the following information.
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-hw04`
+   directory with the following information:
 
-   1. Your name and UGA ID number;
-   1. Collaborator names, if any; and
-   1. The full link to the website generated in this exercise.
+   1. Your name and UGA ID number; and
+   1. Full URL for your hosted API website 
    
    Here is an example of the contents of `SUBMISSION.md`.
    
    ```
-   1. Sally Smith (811-000-999)
-   2. Collaborators: Joe Allen, Stacie Mack
-   3. https://webwork.cs.uga.edu/~user/cs1302-ce09-doc
+   Sally Smith (811-000-999)
+   https://webwork.cs.uga.edu/~your_username/cs1302-hw04-doc/
    ```
 
-1. Change directories to the parent of `cs1302-ce09` (e.g., `cd ..` from `cs1302-ce09`). If you would like
-   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
+1. Change directories to the parent of `cs1302-hw04` (e.g., `cd ..` from `cs1302-hw04`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
    We won't repeat those steps here and you can view them as optional.
    
 1. Use the `submit` command to submit this exercise to `csci-1302`:
    
    ```
-   $ submit cs1302-ce09 csci-1302
+   $ submit cs1302-hw04 csci-1302
    ```
    
    Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
