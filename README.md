@@ -27,9 +27,12 @@ set of requirements.
 In your notes, clearly answer the following questions. These instructions assume that you are 
 logged into the Odin server. 
 
-**NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
-command that you typed to make the related action happen. If context is necessary (e.g., the 
-command depends on your present working directory), then please note that context as well.
+**NOTE:** For each step, please provide in your notes the full command that you typed to make the related 
+action happen along with an explanation of why that command worked. Some commands require multiple options. 
+It is important to not only recall what you typed but also why you typed each of them. If context is necessary 
+(e.g., the command depends on your present working directory), then please note that context as well.
+You won't need to submit your notes in your final submission. However, if done properly, your exercise notes 
+will serve as a helpful study guide for the exam.
 
 ## Exercise Steps
 
@@ -41,9 +44,23 @@ command depends on your present working directory), then please note that contex
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw04.git
    ```
 
-1. **[ALL GROUP MEMBERS]**
-   If you did not setup your Git username and email on Odin when working on `cs1302-ce07`,
-   then please revist that exercise and follow the instructions presented there.
+1. Setup your Git username and email on Odin by modifiying and executing the commands below. 
+   When setting the `user.name` property, please provide your name as it appears on eLC and
+   Athena. If you have a preferred name, then you may include it in parentheses. For the
+   `user.email` property, please use your `@uga.edu` email address:
+
+   ```
+   $ git config --global user.name "Mona Lisa (Liz)"
+   $ git config --global user.email "email@uga.edu"
+   ```
+   
+   You can verify that these properties were setup correctly by observing the output of
+   the following commands:
+   
+   ```
+   $ git config --global user.name
+   $ git config --global user.email
+   ```
 
 1. Change into the `cs1302-hw04` directory that was just created and look around. There should be
    multiple Java files contained within the directory structure. To see a listing of all of the 
@@ -53,8 +70,11 @@ command depends on your present working directory), then please note that contex
    $ find src
    ```
 
-   This is the same starter code from `cs1302-ce08`! Refer to your notes for that exercise about
+   You should recognize this code from last week's lecture! Refer to your notes from class about
    any inter-dependencies and/or inheritance between the files.
+   
+   **Please Note:** This homework assignment may be slightly different from what we did in class
+   last week. Do not make any assumptions about the code based on what was discussed in lecture.
 
 1. In your notes, draw a complete, proper UML diagram for the three classes contained in the
    starter code. **You might need to devote an entire page to this. We recommend using a pencil.** 
@@ -82,9 +102,11 @@ command depends on your present working directory), then please note that contex
 ### Checkpoint 2 Steps
 
 1. Create and document a `Rectangle` class in the `cs1302.shapes` package. It should extend
-   the `Shape` class. In addition to including relevant instance variables for describing
-   a rectangle, it should provide a constructor and a set of overrides for the `getArea` and
-   `getPerimeter` methods. Additionally, include getter methods for the instance variables. 
+   the `Shape` class. Your `Rectangle` class should include at least:
+      * Relevant instance variables for describing a rectangle, 
+      * A constructor,
+      * A set of overrides for the `getArea` and `getPerimeter` methods, and
+      * Getter methods for the instance variables. 
 
 1. Compile your `Rectangle` class. If you encounter any compililation errors:
 
@@ -97,6 +119,12 @@ command depends on your present working directory), then please note that contex
 1. Make sure that all Java files pass the `checkstyle` audit. 
    
 1. Since we've added a new class to our project, it's a good idea to save our work using Git.
+   In this step, you will do your first commit to your local git repository (on the Odin server) so 
+   that you (and the instructors/TAs) can see what you've done. For now, think of a commit as saving 
+   a snapshot of your progress in the exercise. We will use many additional features of git in future
+   tutorials and exercises. These features include, but are not limited to, creating multiple development 
+   branches, rolling back to a previous snapshot (version of the code), and collaborating with teammates.
+   
    Check the status of your local copy of the repository using the following command:
 
    ```
@@ -114,14 +142,30 @@ command depends on your present working directory), then please note that contex
    nothing added to commit but untracked files present (use "git add" to track)
    ```
 
-   As the message suggests, your `Rectangle.java` file is untracked. This is because it is a
-   new file that is not currently tracked by Git. To have Git track changes on this file, 
-   use the `git add` command as described in the message. 
+   As the message suggests, your `Rectangle.java` file is untracked. This simply means
+   that `Rectangle.java` is a new file that is not currently tracked by Git. To add the new
+   file to our repository so we can save the changes, use the `git add` command as 
+   described in the message. The full command would look something like:
+   
+   ```
+   $ git add src/cs1302/shapes/Rectangle.java
+   ```
 
+   Now Git is tracking the `Rectangle.java` file and we can add the changes to our next
+   commit snapshot. Execute `git status` again to see the difference in how Git views
+   this file after we added it.
+   
 1. Now, use Git to commit the changes that you made to your source code to your local
-   copy of the repository. Remember to use the `-m` (message) option to give a brief,
-   one sentence description of the changes you made to the source code. If you forget
-   the `-m` option, then you Git will likely throw you into the Vi program to enter
+   copy of the repository using the command below. Don't forget the string associated 
+   with the `-m` (message) option to give a brief, one sentence description of the 
+   changes you made to the source code. Feel free to change the message after `-m` in the
+   command below.
+   
+   ```
+   $ git commit -m "Added a Rectangle class to the Shapes hierarchy"
+   ```
+   
+   If you forget the `-m` option, then you Git will likely throw you into the Vi program to enter
    a message! 😱 Don't be scared if this happens to you... Press `i`, type your sentence,
    then press the intuitive sequence of keys: `ESC`, `:`, `wq!`, followed by return.
    Next time, remember the `-m` option.
@@ -172,8 +216,9 @@ command depends on your present working directory), then please note that contex
    change to a `Rectangle` method, then this change will propogate throughout all descendants
    in your heirarchy that don't explicitly perform an override of the relevant method.
 
-1. Tell Git to track changes made to your `Square.java` file, then commit the changes
-   to your local copy of the repository. Be sure to include a good log message. 
+1. Tell Git to track changes made to your `Square.java` file using the `git add` command, then 
+   commit the changes to your local copy of the repository. Be sure to include a good log message using
+   the `-m` option to the `git commit` command. 
 
 1. Generate the API documentation website for all of the code in the `cs1302` package
    into the `doc` directory. You may need to create the `doc` directory if it does not already exist.
@@ -203,7 +248,7 @@ command depends on your present working directory), then please note that contex
       
    1. Loop over the array. For each element in the array, print the name of the shape using the
       `getName` method as well as the return values of the `getArea` and `getPerimeter` methods. Which
-      classes do not explicitly define `getArea` and `getPerimeter`?
+      classes do not explicitly define `getArea` and `getPerimeter` in their source code?
 
 1. Make sure that all Java files pass the `checkstyle` audit. 
 
@@ -216,7 +261,25 @@ command depends on your present working directory), then please note that contex
    What is the direct URL to the API documentation for the class that you wrote
    for this checkpoint?
 
-1. Use Git to view your commit log.
+1. Wonder why we've been having you commit all of these changes to Git? Well, each time you save, you are
+   taking a snapshot of your code. Think of it as a save point. Eventually, we will explore the idea of
+   going back in time to an older version of the code. Imagine being able to save your code in various stages
+   of development. Then, being able to make modifications and have a choice whether to incorporate those changes
+   into your code or to discard them! That's just one of the benefits of using Git.
+
+1. To view all of the commits you made in this homework assignment, run the following command:
+
+   ```
+   $ git log
+   ```
+   
+   For more concise output, use the following:
+   
+   ```
+   $ git log --all --decorate --oneline --graph
+   ```
+   
+   Cool, huh? :)
 
 <hr/>
 
