@@ -37,7 +37,7 @@ public abstract class Shape {
     } // getName
 
     /**
-     * Returns the area of this area of this shape.
+     * Returns the area of this shape.
      *
      * @return the area of this shape
      */
