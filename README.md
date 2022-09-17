@@ -280,6 +280,16 @@ will serve as a helpful study guide for the exam.
    ```
    
    Cool, huh? :)
+   
+1. It is tiresome to write those `git` options out each time. Instead, create a `git adog` command
+   by setting up a Git alias:
+
+   ```
+   $ git config --global alias.adog "log --all --decorate --oneline --graph"
+   ```
+   
+1. Now, view the condensed, graphical version of your Git log using `git adog`. That shortcut will
+   now be available for you to use anytime you're on Odin!
 
 <hr/>
 
