@@ -120,8 +120,8 @@ will serve as a helpful study guide for the exam.
    
 1. Since we've added a new class to our project, it's a good idea to save our work using Git.
    In this step, you will do your first commit to your local git repository (on the Odin server) so 
-   that you (and the instructors/TAs) can see what you've done. For now, think of a commit as saving 
-   a snapshot of your progress in the exercise. We will use many additional features of git in future
+   that you (and the instructors/TAs) can see what you've done. This will create a snapshot of what you've
+   done so far. We will use many additional features of git in future
    tutorials and exercises. These features include, but are not limited to, creating multiple development 
    branches, rolling back to a previous snapshot (version of the code), and collaborating with teammates.
    
@@ -206,15 +206,15 @@ will serve as a helpful study guide for the exam.
 1. Make sure that all Java files pass the `checkstyle` audit. 
 
 1. You just utilized inheritance to reduce the amount of code needed to create a new class! Your
-   `Square` class has everything a `Square` has. How much new code did you need to write? 
-   Use `wc` to check your coder stats! 
+   `Square` class has everything a `Rectangle` has. How much new code did you need to write? 
+   Use `wc` to check your code stats! 
 
    1. How many lines are in `Rectangle.java`?
    1. How many lines are in `Square.java`?
    
    Contrary to popular belief, fewer lines of code is usually better. Also, if you need to make a
    change to a `Rectangle` method, then this change will propogate throughout all descendants
-   in your heirarchy that don't explicitly perform an override of the relevant method.
+   in your hierarchy that don't explicitly perform an override of the relevant method.
 
 1. Tell Git to track changes made to your `Square.java` file using the `git add` command, then 
    commit the changes to your local copy of the repository. Be sure to include a good log message using
@@ -281,8 +281,8 @@ will serve as a helpful study guide for the exam.
    
    Cool, huh? :)
    
-1. It is tiresome to write those `git` options out each time. Instead, create a `git adog` command
-   by setting up a Git alias:
+1. If you like the more concise output but think it may become tiresome to write those `git` options out each time, 
+   create a `git adog` command by setting up a Git alias:
 
    ```
    $ git config --global alias.adog "log --all --decorate --oneline --graph"
