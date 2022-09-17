@@ -11,8 +11,8 @@ implications. It also revisits how to commit and view changes to a local Git rep
 
 ## Prerequisite Knowledge
 
-* [CSCI 1302 Inheritance Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/inheritance/inheritance.md)
-* [CSCI 1302 UML Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md)
+* [CSCI 1302 Inheritance Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/inheritance/inheritance.md)
+* [CSCI 1302 UML Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/uml/uml.md)
 
 ## Course-Specific Learning Outcomes
 
@@ -70,15 +70,15 @@ will serve as a helpful study guide for the exam.
    $ find src
    ```
 
-   You should recognize this code from last week's lecture! Refer to your notes from class about
+   You should recognize this code from the inheritance lecture! Refer to your notes from class about
    any inter-dependencies and/or inheritance between the files.
    
-   **Please Note:** This homework assignment may be slightly different from what we did in class
-   last week. Do not make any assumptions about the code based on what was discussed in lecture.
+   **Please Note:** This homework assignment may be slightly different from what we did in class. 
+   Do not make any assumptions about the code based on what was discussed in lecture.
 
 1. In your notes, draw a complete, proper UML diagram for the three classes contained in the
    starter code. **You might need to devote an entire page to this. We recommend using a pencil.** 
-   Refer to the [CSCI 1302 UML Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md)
+   Refer to the [CSCI 1302 UML Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/uml/uml.md)
    if needed.
    Specifically, each individual class diagram should contain:
 
