@@ -25,7 +25,7 @@ public class Ellipse extends Shape {
      * @param b the length of the semi-minor axis
      */
     public Ellipse(double a, double b) {
-        setName("Ellipse");
+        super("Ellipse");
         this.a = a;
         this.b = b;
     } // Ellipse
