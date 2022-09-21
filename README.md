@@ -299,37 +299,13 @@ will serve as a helpful study guide for the exam.
 
 ### Submission Steps
 
-**Each student needs to individually submit their own work.**
+You will not submit this assignment. However, this is important practice for the first exam. Make sure you understand
+the concepts from this homework assignment before the exam date.
 
-1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-hw04`
-   directory with the following information:
+<hr/>
 
-   1. Your name and UGA ID number; and
-   1. Full URL for your hosted API website 
-   
-   Here is an example of the contents of `SUBMISSION.md`.
-   
-   ```
-   Sally Smith (811-000-999)
-   https://webwork.cs.uga.edu/~your_username/cs1302-hw04-doc/
-   ```
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
-1. Change directories to the parent of `cs1302-hw04` (e.g., `cd ..` from `cs1302-hw04`). If you would like
-   to make a backup tar file, the instructions are in the submissions steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
-   We won't repeat those steps here and you can view them as optional.
-   
-1. Use the `submit` command to submit this exercise to `csci-1302`:
-   
-   ```
-   $ submit cs1302-hw04 csci-1302
-   ```
-   
-   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
-   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
-   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
-   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
-
-   **Note:** You must be on Odin to submit.
 
 <hr/>
 
