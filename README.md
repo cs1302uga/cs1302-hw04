@@ -306,11 +306,6 @@ the concepts from this homework assignment before the exam date.
 
 ![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
-
-<hr/>
-
-![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
-
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/) [![License: CC BY-NC 4.0](https://img.shields.io/badge/Instructor%20License-CC%20BY--NC%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc/4.0/)
