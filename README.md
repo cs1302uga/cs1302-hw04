@@ -279,17 +279,26 @@ will serve as a helpful study guide for the exam.
    $ git log --all --decorate --oneline --graph
    ```
    
-   Cool, huh? :)
+   or just:
    
+   ```
+   git adog
+   ```
+   
+   for short. Cool, huh? :)
+   
+<!--
+
 1. If you like the more concise output but think it may become tiresome to write those `git` options out each time, 
    create a `git adog` command by setting up a Git alias:
 
    ```
    $ git config --global alias.adog "log --all --decorate --oneline --graph"
    ```
-   
+
 1. Now, view the condensed, graphical version of your Git log using `git adog`. That shortcut will
    now be available for you to use anytime you're on Odin!
+-->
 
 <hr/>
 
