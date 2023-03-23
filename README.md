@@ -1,6 +1,6 @@
 # cs1302-hw04 More Shapes!
 
-![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
+![Approved for: Spring 2023](https://img.shields.io/badge/Approved%20for-Spring%202023-magenta)
 
 > 十人十色 (Ten People, Ten Colors)
 > **--Japanese Idiom**
