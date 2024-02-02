@@ -1,6 +1,6 @@
 # cs1302-hw04 More Shapes!
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 > 十人十色 (Ten People, Ten Colors)
 > **--Japanese Idiom**
@@ -24,7 +24,7 @@ set of requirements.
 
 ## Questions
 
-In your notes, clearly answer the following questions. These instructions assume that you are 
+In your notes, answer the following questions. These instructions assume that you are 
 logged into the Odin server. 
 
 **NOTE:** For each step, please provide in your notes the full command that you typed to make the related 
@@ -44,7 +44,7 @@ will serve as a helpful study guide for the exam.
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw04.git
    ```
 
-1. Setup your Git username and email on Odin by modifiying and executing the commands below. 
+1. Set up your Git username and email on Odin by modifying and executing the commands below. 
    When setting the `user.name` property, please provide your name as it appears on eLC and
    Athena. If you have a preferred name, then you may include it in parentheses. For the
    `user.email` property, please use your `@uga.edu` email address:
@@ -54,7 +54,7 @@ will serve as a helpful study guide for the exam.
    $ git config --global user.email "email@uga.edu"
    ```
    
-   You can verify that these properties were setup correctly by observing the output of
+   You can verify that these properties were set correctly by observing the output of
    the following commands:
    
    ```
@@ -74,7 +74,7 @@ will serve as a helpful study guide for the exam.
    any inter-dependencies and/or inheritance between the files.
    
    **Please Note:** This homework assignment may be slightly different from what we did in class. 
-   Do not make any assumptions about the code based on what was discussed in lecture.
+   Do not make any assumptions about the code based on what was discussed in the lecture.
 
 1. In your notes, draw a complete, proper UML diagram for the three classes contained in the
    starter code. **You might need to devote an entire page to this. We recommend using a pencil.** 
@@ -89,9 +89,9 @@ will serve as a helpful study guide for the exam.
    * If needed, a dashed generalization arrow (`implements`) to an interface.
 
    In a class diagram, do not list inherited members (methods or attributes) unless they are 
-   explicitly overriden. Be sure to include visibility modifiers (e.g., `+`, `#`, `~`, `-`) and
-   type / return type information where needed. Also, remember that generalization arrows have a triangle
-   arrow head, which differentiates them from dependency and aggregration associations.
+   explicitly overridden. Be sure to include visibility modifiers (e.g., `+`, `#`, `~`, `-`) and
+   type/return type information where needed. Also, remember that generalization arrows have a triangle
+   arrowhead, which differentiates them from dependency and aggregation associations.
 
 <hr/>
 
@@ -108,7 +108,7 @@ will serve as a helpful study guide for the exam.
       * A set of overrides for the `getArea` and `getPerimeter` methods, and
       * Getter methods for the instance variables. 
 
-1. Compile your `Rectangle` class. If you encounter any compililation errors:
+1. Compile your `Rectangle` class. If you encounter any compilation errors:
 
    1. Write the error down in your notes;
    1. Fix the error in your code;
@@ -122,7 +122,7 @@ will serve as a helpful study guide for the exam.
    In this step, you will do your first commit to your local git repository (on the Odin server) so 
    that you (and the instructors/TAs) can see what you've done. This will create a snapshot of what you've
    done so far. We will use many additional features of git in future
-   tutorials and exercises. These features include, but are not limited to, creating multiple development 
+   tutorials and exercises. These features include but are not limited to, creating multiple development 
    branches, rolling back to a previous snapshot (version of the code), and collaborating with teammates.
    
    Check the status of your local copy of the repository using the following command:
@@ -157,7 +157,7 @@ will serve as a helpful study guide for the exam.
    
 1. Now, use Git to commit the changes that you made to your source code to your local
    copy of the repository using the command below. Don't forget the string associated 
-   with the `-m` (message) option to give a brief, one sentence description of the 
+   with the `-m` (message) option to give a brief, one-sentence description of the 
    changes you made to the source code. Feel free to change the message after `-m` in the
    command below.
    
@@ -165,14 +165,14 @@ will serve as a helpful study guide for the exam.
    $ git commit -m "Added a Rectangle class to the Shapes hierarchy"
    ```
    
-   If you forget the `-m` option, then you Git will likely throw you into the Vi program to enter
+   If you forget the `-m` option, then Git will likely throw you into the Vi program to enter
    a message! 😱 Don't be scared if this happens to you... Press `i`, type your sentence,
    then press the intuitive sequence of keys: `ESC`, `:`, `wq!`, followed by return.
    Next time, remember the `-m` option.
    
-   **NOTE:** If you don't want to be inadvertantly thrown into Vi in the future, then
+   **NOTE:** If you don't want to be inadvertently thrown into Vi in the future, then
    add the following line to your `~/.bash_profile` to set the default editor to Emacs
-   (changes take effect on next login):
+   (changes take effect on your next login):
    
    ```
    export EDITOR="emacs -nw"
@@ -195,7 +195,7 @@ will serve as a helpful study guide for the exam.
    your `Rectangle` class. You shouldn't need to introduce any new instance variables,
    but you should include a constructor that makes proper use of the `super` keyword.
 
-1. Compile your `Square` class. If you encounter any compililation errors:
+1. Compile your `Square` class. If you encounter any compilation errors:
 
    1. Write the error down in your notes;
    1. Fix the error in your code;
@@ -213,7 +213,7 @@ will serve as a helpful study guide for the exam.
    1. How many lines are in `Square.java`?
    
    Contrary to popular belief, fewer lines of code is usually better. Also, if you need to make a
-   change to a `Rectangle` method, then this change will propogate throughout all descendants
+   change to a `Rectangle` method, then this change will propagate throughout all descendants
    in your hierarchy that don't explicitly perform an override of the relevant method.
 
 1. Tell Git to track changes made to your `Square.java` file using the `git add` command, then 
