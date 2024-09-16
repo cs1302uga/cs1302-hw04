@@ -11,8 +11,8 @@ implications. It also revisits how to commit and view changes to a local Git rep
 
 ## Prerequisite Knowledge
 
-* [CSCI 1302 Inheritance Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/inheritance/inheritance.md)
-* [CSCI 1302 UML Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/uml/uml.md)
+* [CSCI 1302 Inheritance Chapter](https://cs1302uga.github.io/cs1302-book/java/inheritance/inheritance-index.html)
+* [CSCI 1302 UML Chapter](https://cs1302uga.github.io/cs1302-book/tools/uml/uml-index.html)
 
 ## Course-Specific Learning Outcomes
 
@@ -78,7 +78,7 @@ will serve as a helpful study guide for the exam.
 
 1. In your notes, draw a complete, proper UML diagram for the three classes contained in the
    starter code. **You might need to devote an entire page to this. We recommend using a pencil.** 
-   Refer to the [CSCI 1302 UML Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/uml/uml.md)
+   Refer to the [CSCI 1302 UML Chapter](https://cs1302uga.github.io/cs1302-book/tools/uml/uml-index.html)
    if needed.
    Specifically, each individual class diagram should contain:
 
